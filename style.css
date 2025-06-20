@@ -1,0 +1,127 @@
+.s-hightlight-text-blue {
+  color: #2563eb;
+  background-color: #d6e1fb4d;
+  border-radius: 12px;
+  margin-left: -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  line-height: 1.3em;
+  display: inline-block;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #1e293b;
+  display: flex;
+  padding: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Sidebar */
+.u-all-policy-sticky {
+  width: 280px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  background: white;
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+}
+
+.s-text-letter-spcae-20per {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+}
+
+.u-policy-toc-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.u-policy-toc-item-link {
+  font-size: 15px;
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  transition: color 0.3s;
+  position: relative;
+  padding-left: 12px;
+}
+
+.u-policy-toc-item-link:hover,
+.u-policy-toc-item-link.active {
+  color: #2563eb;
+}
+
+.u-policy-toc-item-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #3b82f6;
+  border-radius: 4px;
+}
+
+/* Main content */
+main.content {
+  max-width: 800px;
+}
+
+main.content h1 {
+  font-size: 28px;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+main.content h3 {
+  font-size: 20px;
+  color: #1d4ed8;
+  margin-top: 2rem;
+}
+
+main.content ul.checklist {
+  padding-left: 1.5rem;
+}
+
+main.content ul.checklist li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .u-all-policy-sticky {
+    width: 100%;
+    position: relative;
+    top: unset;
+  }
+
+  main.content {
+    width: 100%;
+  }
+}
